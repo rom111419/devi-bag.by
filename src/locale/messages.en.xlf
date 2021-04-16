@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="ru-RU" datatype="plaintext" original="ng2.template" target-language="en-GB">
+    <body>
+      <trans-unit id="d9284f786febf2adf6a915c386e7d8d014a51c7e" datatype="html">
+        <source>devi-bag</source>
+        <target xml:lang="en-GB">devi-bag</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aaaf3078f544d6170400a22e25001c6c597e413e" datatype="html">
+        <source>Devi Bag</source>
+        <target xml:lang="en-GB">Devi Bag</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a97fb97be04e3f1d77cacfa2a90667984d0a684f" datatype="html">
+        <source><x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/> Спасибо большое за заявку! <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Меня зовут Денис. Я постараюсь Вас набрать в течении часа и уточнить детали.</source>
+        <target xml:lang="en-GB"><x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>Thank you very much for your application! <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> My name is Denis. I will try to dial you within an hour and clarify the details.</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="294438b62b7bedea6633895ae32b1be3c669b2bc" datatype="html">
+        <source>Имя</source>
+        <target xml:lang="en-GB">Name</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3448ea68b9436562f94e3f855cd3b3f24b9f2601" datatype="html">
+        <source>Номер</source>
+        <target xml:lang="en-GB">Number</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f0b0ae2f05c213f520c298219a8e36a575753fa1" datatype="html">
+        <source>Адрес</source>
+        <target xml:lang="en-GB">Address:</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4a7a82179cd87464c4dcfb6ba75bba06041547f4" datatype="html">
+        <source>Кресло-мешок «DEVI»</source>
+        <target xml:lang="en-GB">Chair bag "DEVI"</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">163</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="176959a7c936b80e75bd83038a365f77a7380531" datatype="html">
+        <source>- Практичное удобное изделие по приемлемой цене.</source>
+        <target xml:lang="en-GB">- Practical, convenient product at an affordable price.</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a806dee4d8962ff1a648607df316398fe95c1b1f" datatype="html">
+        <source>- Кресло принимает форму тела за счет множества маленьких шариков пенопласта внутри.</source>
+        <target xml:lang="en-GB">- The chair takes the form of a body due to the many small balls of polystyrene inside.</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2eb8ad64f765159eff857cd44c97ddbb701d4662" datatype="html">
+        <source>- Собственное изготовление, делаем на совесть.</source>
+        <target xml:lang="en-GB">- Own production, we do it honestly.</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ba2f97ce0552f9ff7f5a8b142734f1bbf874c2e4" datatype="html">
+        <source>- Кресла всегда в наличии для Вас, отправляем заказ быстро.</source>
+        <target xml:lang="en-GB">- Armchairs are always available for you, we ship the order quickly.</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fa6d7f0796d5e9f315b7e32ec0f4c4510f3a9d27" datatype="html">
+        <source>- Скидки уже от двух кресел в Вашем заказе.</source>
+        <target xml:lang="en-GB">- Discounts from two seats in your order.</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="48bec807a8e297781d171671756b054f0fac73f5" datatype="html">
+        <source>- Можно пользоваться дома и на улице.</source>
+        <target xml:lang="en-GB">- You can use it at home and on the street.</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9b7614cfc4426716066d99bc09fa23838733de86" datatype="html">
+        <source>- Состоит из двух чехлов. Внутренний для наполнителя, а внешний съемный предназначен для нагрузки, изготовлен из очень прочной ткани ГРЕТА, из нее шьют спецодежду, плотность 200 гр/м.кв., с влагоотталкивающей пропиткой. Чехол легко снять и постирать или заменить на другой цвет.</source>
+        <target xml:lang="en-GB">- Consists of two covers. Internal for the filler, and the external removable is designed for the load, made of very durable GRETA fabric, overalls are sewn from it, density 200 g / m2, with water-repellent impregnation. The cover is easy to remove and wash or replace with a different color.</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="21eaae44a78658b11a21f32dcbf30fb1281528d6" datatype="html">
+        <source>- Используются крепкие нити и двойной шов для устойчивости к разрыву и долгого использования.</source>
+        <target xml:lang="en-GB">- Strong yarns and a double seam are used for tear resistance and long use.</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">171</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="23d3a2e0206c56840e583721bbf52656dc34cf6a" datatype="html">
+        <source>- Наполнитель: шарики пенопласта (не крошка!) высокой плотности - 15кг/м.куб., а значит долго не оседают и держат форму.</source>
+        <target xml:lang="en-GB">- Filler: high density foam balls (not crumbs!) - 15kg / m3, which means they do not settle for a long time and keep their shape.</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">172</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2052613e6665feb84e8d255fb3bab91a990bbbcf" datatype="html">
+        <source>- Есть разные цвета: черный, коричневый, серый, желтый, синий, зеленый, бордовый, оранжевый, красный.</source>
+        <target xml:lang="en-GB">- There are different colors: black, brown, gray, yellow, blue, green, burgundy, orange, red.</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ac79ac28d77b64b1a8361e6734296cf596627d1e" datatype="html">
+        <source>- Размер универсальный взрослый, будет удобно для человека массой до 120 кг и ростом до 190 см. А Ваши дети в нем будут чувствовать себя тем более комфортно и смогут даже лежать. В итоге Вы получите классное кресло мешок для всей семьи за приемлемую цену.</source>
+        <target xml:lang="en-GB">- The size is universal adult, it will be convenient for a person weighing up to 120 kg and growing up to 190 cm. And your children will feel even more comfortable in it and will even be able to lie. As a result, you will get a cool chair bag for the whole family at an affordable price.</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="93c46fb63cfbf36603f7f64bfd090534be40e8d7" datatype="html">
+        <source>- Вес кресла: 5 кг (3,8 кг наполнитель + 1,2 кг чехлы).</source>
+        <target xml:lang="en-GB">- Chair weight: 5 kg (3.8 kg filler + 1.2 kg covers).</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">175</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="08f23243d6def2aaab16038a540aae4b30b788ed" datatype="html">
+        <source>- Доставим Вам в любой населенный пункт Беларуси (можно курьером на дом) в течение 1-3 дней. Оплата наличными при получении.</source>
+        <target xml:lang="en-GB">- We will deliver to you in any settlement of Belarus (you can take it by courier to your home) within 1-3 days. Payment in cash upon receipt.</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">176</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="da79492e02b0613c1966a8b94afe86bcbdf0005a" datatype="html">
+        <source>- Гарантия 6 месяцев.</source>
+        <target xml:lang="en-GB">Guarantee 6 month.</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">177</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5e64758cc7daf560147d2969afc8b5342cf4da50" datatype="html">
+        <source>- Также можно заказать отдельно внешний чехол любого цвета или наполнитель (шарики пенопласта).</source>
+        <target xml:lang="en-GB">- It is also possible to order separately an external cover of any color or a filler (foam balls).</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">178</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fb657634d026e0022e57e5af3ba392a8e83bce6a" datatype="html">
+        <source>- Мы стараемся, чтобы Вам было комфортно! Звоните по любым вопросам!</source>
+        <target xml:lang="en-GB">- Call for any questions!</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">179</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="772f7615abd4f5413a0a5a2497cc5290cd083822" datatype="html">
+        <source>Заказать</source>
+        <target xml:lang="en-GB">Book now</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cf37f3e568dd125c5b52a6ed03ab528a90841750" datatype="html">
+        <source>Кресло-мешок «DEVI»</source>
+        <target xml:lang="en-GB">Chair bag "DEVI"</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5b3d45ff117cf304288897c2c7966b59a14e1a64" datatype="html">
+        <source>Основной: +375336935090</source>
+        <target xml:lang="en-GB">Primary: +375336935090</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">218</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="846f524ca82f46a286c424d6793dbc74941be80f" datatype="html">
+        <source>Дополнительный: +375447154273</source>
+        <target xml:lang="en-GB">Additional: +375447154273</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">219</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2de584db8b1cd7e4c07f0eb1fcb330cdab084a1c" datatype="html">
+        <source>Контактное лицо: Денис</source>
+        <target xml:lang="en-GB">Contact Person: Denis</target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">221</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="acca0fb61f32dbd9b4d83311f5be0e0c97d81f06" datatype="html">
+        <source>Адрес: <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Минск<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN_1" ctype="x-span" equiv-text="&lt;span&gt;"/>ул. Кирова 6<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target xml:lang="en-GB">Address:<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Minsk<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN_1" ctype="x-span" equiv-text="&lt;span&gt;"/> st. Kirova 6<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+<context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">222</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
