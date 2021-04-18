@@ -9,8 +9,7 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
 export class AddShoppingCartComponent implements OnInit {
   @Input() quantityInOrder: any = [];
 
-  constructor() {
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }
