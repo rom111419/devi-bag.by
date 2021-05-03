@@ -585,7 +585,11 @@ pu-root {
         text-decoration: none;
       }
       .slider__good {
-        max-height: 25px;
+        border: 1px solid;
+        margin: 20px;
+        border-radius: 25px;
+        text-align: center;
+        box-shadow: 0 0 10px #6d6d6d inset;
       }
     }
     &__tag-name {
