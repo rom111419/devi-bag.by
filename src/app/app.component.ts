@@ -83,7 +83,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
         if (good.link === 'interier_title.jpg') {
             this.interior = true;
         } else {
-            this.interior = false;
+            this.interior = true;
         }
         this.errorText = false;
     }

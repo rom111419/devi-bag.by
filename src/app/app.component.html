@@ -115,10 +115,11 @@
                          [class.modal_enabled]="!!sliderGoods[i].modal"
                          [style.left]="(!!event && event.screenX / window.innerWidth * 100 < 62) ? '-2px':'-400px'"
                          [style.top]="(i < 48) ? '128px':'-384px'"
+                         *ngIf="!!good.price"
                          class="modal"
                     ><img [src]="['assets/photo/mid/'+ good.link]"></div>
                     <div class="price">{{good.price}}</div>
-                    <div class="byn">byn</div>
+                    <div class="byn" *ngIf="!!good.price">byn</div>
                     <img #imgGood (load)="loader.remove()" [src]="['assets/photo/mid/'+ good.link]"
                          style="visibility: hidden">
                     <div #loader class="loader"></div>
