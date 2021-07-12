@@ -2,26 +2,34 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/app",
-    "types": []
+    "types": [],
+    "paths": {
+      "@app/*": [
+        "projects/puffi/src/app/*"
+      ],
+      "@env/*": [
+        "projects/puffi/src/environments/*"
+      ],
+      "@assets/*": [
+        "projects/puffi/src/assets/*"
+      ],
+    }
   },
   "files": [
     "src/main.ts",
     "src/polyfills.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
+    "projects/puffi/src/**/*.d.ts"
   ],
   "typedocOptions": {
-    "entryPoints": [
-      "projects/ritm/src"
-    ],
-    "out": "dist/ritm/src/assets/docs",
-    "exclude": "projects/ritm/**/*+(.spec|.e2e|polyfills|test).ts",
-    "readme": "projects/ritm/README.md",
+    "entryPoints": ["projects/puffi/src"],
+    "out": "dist/puffi/typedoc",
+    "exclude": "projects/puffi/**/*+(.spec|.e2e|polyfills|test).ts",
+    "readme": "projects/puffi/README.md",
     "hideGenerator": "true",
-    "plugin": "none",
+    "plugin": "typedoc-neo-theme",
     "watch": true,
-    "includes": "projects/ritm/src/assets/docsfiles",
     "theme": "node_modules/typedoc-neo-theme/bin/default",
     "highlightTheme": "dark-plus"
   }

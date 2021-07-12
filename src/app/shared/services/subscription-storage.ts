@@ -2,11 +2,11 @@ import { Subscription } from 'rxjs';
 
 
 export class SubscriptionStorage {
-    [key: string]: any;
+  [key: string]: any;
 
-    unsubscribe(): void {
-        Object.keys(this).forEach(subscriptionName => {
-            <Subscription>this[subscriptionName].unsubscribe();
-        });
-    }
+  unsubscribe(): void {
+    Object.keys(this).forEach(subscriptionName => {
+      <Subscription>this[subscriptionName].unsubscribe();
+    });
+  }
 }

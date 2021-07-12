@@ -11,15 +11,16 @@ import { AddShoppingCartComponent } from './components/add-shopping-cart/add-sho
 // import { LottieAnimationViewModule } from 'ng-lottie';
 
 @NgModule({
-	declarations: [AppComponent, FooterComponent, AddShoppingCartComponent],
-	imports: [
-		BrowserModule,
-		AppRoutingModule,
-		HttpClientModule,
-		ReactiveFormsModule
-	],
-	providers: [],
-	bootstrap: [AppComponent],
-	schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  declarations: [AppComponent, FooterComponent, AddShoppingCartComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule {}
+export class AppModule {
+}
