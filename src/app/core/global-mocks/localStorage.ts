@@ -1,9 +1,14 @@
+// @ts-ignore
 const mock = () => {
 	let storage = {};
   return {
-		getItem: key => key in storage ? storage[key] : null,
-		setItem: (key, value) => storage[key] = value || '',
+    // @ts-ignore
+    getItem: key => key in storage ? storage[key] : null,
+    // @ts-ignore
+    setItem: (key, value) => storage[key] = value || '',
+    // @ts-ignore
 		removeItem: key => delete storage[key],
+    // @ts-ignore
 		clear: () => storage = {},
 	};
 };
