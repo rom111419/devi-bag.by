@@ -1,11 +1,13 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { FormService } from './form.service';
-import { Router, Event } from '@angular/router';
+import { Router } from '@angular/router';
 import { IImage } from './shared/classes/image.interface';
-import { crudFactoryCreate, crudFactoryRead, ProductPuffiCreator } from './shared/classes/product';
-import { Subscription } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { DataService } from './shared/services/data.service';
+import { HttpClient } from '@angular/common/http';
+import { environment } from '@env/environment';
+import { map } from 'rxjs/operators';
 
 
 @Component({
@@ -23,7 +25,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   sliderImageFileName = 'flags_title.jpg';
   maybeOrder = '';
   sliderGoods: IImage[] = [];
-  sliderInfos: IImage[] = this.data.imgs.filter(good => good.link.includes('flags'));
+  sliderInfos: IImage[] = [];
   orders: IImage[] = [];
   form: FormGroup = new FormGroup({});
   interior = false;
@@ -36,14 +38,21 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   goodQuantityInOrders = 0;
   event: MouseEvent | undefined;
   window = window;
-
+  sliderInfos$: any;
+  tags$: any;
   private subs = new Subscription();
 
   constructor(private fb: FormBuilder, private formService: FormService, private router: Router,
-              public data: DataService) {
+              public data: DataService, private http: HttpClient) {
   }
 
   ngOnInit(): void {
+    this.sliderInfos$ = this.http.get(environment.apiLink + '/devi-bag-images')
+      .pipe(map((value: any) => {
+        this.sliderInfos = value.filter((good: any) => good.link.includes('flags'));
+      }))
+    this.tags$ = this.http.get(environment.apiLink + '/devi-bag-tags');
+
     this.maybeOrder = this.sliderImageFileName.split('_' || '.')[0] + '.jpg';
     this.form = this.fb.group({
       name: ['', [Validators.required]],

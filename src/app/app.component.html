@@ -1,3 +1,4 @@
+<ng-container *ngIf="this.sliderInfos$ | async as sliderInfos"></ng-container>
 <ng-container>
   <div [class]="['header', sliderToggle?'header_compress':'header_expand']">
     <div class="contacts contacts_header_left">+375(33)6935090</div>
@@ -88,7 +89,7 @@
         <ul class="slider__goods-mode">
           <!--Categories-->
           <ng-container>
-            <div *ngFor="let tag of data.tags; let i = index"
+            <div *ngFor="let tag of tags$ | async; let i = index"
                  (click)="sliderGoods = data.getCategoryImgs('tagsId', tag.id);"
                  [style.backgroundImage]="'url(assets/photo/mid/'+ tag.img[0] +')'"
                  class="slider__good"
