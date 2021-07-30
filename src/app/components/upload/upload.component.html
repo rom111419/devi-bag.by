@@ -1,0 +1,4 @@
+<form [formGroup]="form">
+  <input type="file" alt="price uploading" formControlName="file">
+  <button *ngIf="this.isSent !== true" (click)="sendFile()">Send</button>
+</form>

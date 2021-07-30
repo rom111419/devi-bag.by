@@ -7,15 +7,17 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
 import { AddShoppingCartComponent } from './components/add-shopping-cart/add-shopping-cart.component';
+import { UploadComponent } from './components/upload/upload.component';
+import { PageComponent } from './components/page/page.component';
 
 // import { LottieAnimationViewModule } from 'ng-lottie';
 
 @NgModule({
-  declarations: [AppComponent, FooterComponent, AddShoppingCartComponent],
+  declarations: [AppComponent, FooterComponent, AddShoppingCartComponent, UploadComponent, PageComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
+    AppRoutingModule,
     ReactiveFormsModule,
   ],
   providers: [],

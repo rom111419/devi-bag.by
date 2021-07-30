@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
+import { UploadComponent } from '@app/components/upload/upload.component';
+import { PageComponent } from '@app/components/page/page.component';
+import { AppComponent } from '@app/app.component';
 
 
 const routes: Routes = [
-  {path: 'bags', component: AppComponent},
-  {path: 'bag/:id', component: AppComponent},
-  {path: 'collections', component: AppComponent},
-  {path: 'collection/:id', component: AppComponent},
+  {path: '', component: PageComponent},
+  {path: 'bags', component: PageComponent},
+  {path: 'bag/:id', component: PageComponent},
+  {path: 'collections', component: PageComponent},
+  {path: 'collection/:id', component: PageComponent},
+  {path: 'upload', component: UploadComponent},
   // {path: '**', component: AppComponent
 ];
 
