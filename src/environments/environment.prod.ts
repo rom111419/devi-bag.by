@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiLink: 'http://api.rit-m.by'
+  apiLink: 'https://api.rit-m.by'
 };
