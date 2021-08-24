@@ -1,0 +1,138 @@
+@import "vars";
+
+:host {
+  .add-shopping-cart {
+    cursor: pointer;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+
+    &::selection {
+      background: none;
+    }
+
+    &:hover {
+      .add-shopping-cart__circle .add-shopping-cart__circle {
+        box-shadow: 2px 5px 5px #0003
+      }
+    }
+
+    &:active {
+      transform: rotate(-0deg);
+
+      .add-shopping-cart__circle .add-shopping-cart__circle {
+        box-shadow: -2px -2px 1px #0003;
+        background: linear-gradient(145deg, rgba(92, 92, 92, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%);
+      }
+    }
+
+    &__goods-length {
+      position: absolute;
+      right: -65px;
+      font-size: xx-large;
+      color: white;
+      background: #091824;
+      padding: 0 20px 0 40px;
+      border-radius: 5px;
+      top: 27px;
+      z-index: -1;
+
+      &::selection {
+        background: none;
+      }
+    }
+
+    &__circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      background: rgba(255, 255, 255, 0.07);
+      background: #6e767d;
+      // background: linear-gradient(315deg, rgba(92,92,92,0.07) 0%, rgba(255,255,255,0.07) 100%);
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      box-shadow: 2px 5px 13px #0003;
+
+      > .add-shopping-cart__circle {
+        width: 78px;
+        height: 78px;
+        background: rgba(255, 255, 255, 0.13);
+        background: linear-gradient(315deg, rgba(92, 92, 92, 0.13) 0%, rgba(255, 255, 255, 0.13) 100%);
+
+        > .add-shopping-cart__circle {
+          width: 59px;
+          height: 59px;
+          background: rgba(255, 255, 255, 0.2);
+          background: linear-gradient(315deg, rgba(92, 92, 92, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+
+          svg {
+            width: 33px;
+
+            path {
+              fill: white
+            }
+          }
+        }
+      }
+    }
+
+    .text {
+      margin-left: 15px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 140%;
+      color: $c1;
+      background: #9b9b9b;
+      padding: 0 10px;
+      // background: green;
+      &::selection {
+        background: none;
+      }
+    }
+
+    & * {
+      transition: 100ms
+    }
+
+    &_slider-good {
+      position: absolute;
+      top: -42px;
+      right: -57px;
+      transform: scale(0.3);
+      display: block;
+
+      .add-shopping-cart__circle {
+        background: #122533;
+      }
+    }
+
+    &_text-hidden {
+      .text {
+        opacity: 0
+      }
+    }
+
+    &_absolute {
+      position: absolute;
+      transform: rotate(-12deg);
+      @media (min-width: $point1 + 1) {
+        margin-left: 200px;
+        left: 100px !important;
+        top: 590px;
+        .text {
+          opacity: 0
+        }
+      }
+      @media (max-width: $point1) {
+        margin-left: 0;
+        left: 10px !important;
+        top: 290px;
+        .text {
+          opacity: 0
+        }
+      }
+    }
+  }
+}

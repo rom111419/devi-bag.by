@@ -1,0 +1,30 @@
+@import "vars";
+
+:host {
+  display: grid;
+  cursor: pointer;
+  place-items: center;
+  position: relative;
+  grid-template: auto/1fr 1fr 1fr 1fr 1fr;
+  @media (max-width: $point0) {
+    place-content: center;
+    grid-template: auto/1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  @media (max-width: $point1) {
+    place-content: center;
+    grid-template: auto/1fr 1fr 1fr 1fr;
+  }
+
+  @media (max-width: $point2) {
+    place-content: center;
+    grid-template: auto/1fr 1fr 1fr;
+  }
+  @media (max-width: $point2) {
+    place-content: center;
+    grid-template: auto/1fr 1fr;
+  }
+  @media (max-width: $point3) {
+    place-content: center;
+    grid-template: auto/1fr;
+  }
+}

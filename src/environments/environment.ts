@@ -4,8 +4,10 @@
 
 export const environment = {
   production: false,
-  apiLink: 'http://localhost:3000'
+  apiLink: "http://localhost:3000",
+  assetsLink: "http://localhost:4201/assets"
 };
+environment.assetsLink = "https://devi-bag.by/assets";
 
 /*
  * For easier debugging in development mode, you can import the following file

@@ -1,0 +1,16 @@
+<ng-container *ngIf="templ === 'homePage'">
+  <div [class]="['image', 'image_homePage']"
+       [id]="'pu-tag-' + product.link"
+       [style.backgroundImage]="'url(https://devi-bag.by/assets/photo/mid/'+product.link+')'"></div>
+  <ng-container *ngIf="!!product.price">
+    <div class="price">{{product.price}} BYN</div>
+    <pu-add-shopping-cart [product]="product"></pu-add-shopping-cart>
+  </ng-container>
+  <a [routerLink]="['bag', product.id]" class="detail">подробнее...</a>
+</ng-container>
+
+<ng-container *ngIf="templ === 'detailPage'">
+  <div [class]="['image', 'image_detail']"
+       [id]="'pu-tag-' + product.link"
+       [style.backgroundImage]="'url(https://devi-bag.by/assets/photo/big/'+product.link+')'"></div>
+</ng-container>

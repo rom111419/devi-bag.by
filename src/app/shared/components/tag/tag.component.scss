@@ -1,0 +1,24 @@
+:host {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-position: center;
+  border: 1px solid;
+  display: grid;
+  font-size: smaller;
+  min-height: 100px;
+  text-align: center;
+  grid-template: 150px 1fr/1fr;
+
+  .tag {
+    width: 100%;
+    background: #535e62;
+
+    &__img {
+      min-height: 84px;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}

@@ -12,7 +12,7 @@
       ],
       "@assets/*": [
         "projects/puffi/src/assets/*"
-      ],
+      ]
     }
   },
   "files": [
@@ -23,7 +23,9 @@
     "projects/puffi/src/**/*.d.ts"
   ],
   "typedocOptions": {
-    "entryPoints": ["projects/puffi/src"],
+    "entryPoints": [
+      "projects/puffi/src"
+    ],
     "out": "dist/puffi/typedoc",
     "exclude": "projects/puffi/**/*+(.spec|.e2e|polyfills|test).ts",
     "readme": "projects/puffi/README.md",

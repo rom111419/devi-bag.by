@@ -1,0 +1,7 @@
+<ng-container *ngIf="(this.deviBagImages$ | async) as products">
+  <ng-container *ngFor="let product of products; index as idx">
+    <pu-good *ngIf="templ === 'detailPage'" [product]="product" [templ]="'detailPage'"></pu-good>
+    <pu-good *ngIf="templ === 'homePage'" [product]="product" [templ]="'homePage'"></pu-good>
+  </ng-container>
+</ng-container>
+

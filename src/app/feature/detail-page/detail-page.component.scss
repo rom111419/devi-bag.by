@@ -1,0 +1,9 @@
+:host {
+  min-height: 60vh;
+  display: block;
+
+  pu-goods {
+    grid-template: repeat(auto-fill, 700px)/1fr;
+
+  }
+}

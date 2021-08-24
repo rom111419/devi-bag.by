@@ -1,23 +1,22 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { UploadComponent } from '@app/components/upload/upload.component';
-import { PageComponent } from '@app/components/page/page.component';
-import { AppComponent } from '@app/app.component';
-
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { UploadComponent } from "@app/feature/upload/upload.component";
+import { HomePageComponent } from "@app/feature/home-page/home-page.component";
+import { DetailPageComponent } from "@app/feature/detail-page/detail-page.component";
 
 const routes: Routes = [
-  {path: '', component: PageComponent},
-  {path: 'bags', component: PageComponent},
-  {path: 'bag/:id', component: PageComponent},
-  {path: 'collections', component: PageComponent},
-  {path: 'collection/:id', component: PageComponent},
-  {path: 'upload', component: UploadComponent},
+  { path: "", component: HomePageComponent },
+  { path: "bags", component: HomePageComponent },
+  { path: "bag/:id", component: DetailPageComponent },
+  { path: "collections", component: HomePageComponent },
+  { path: "collection/:id", component: DetailPageComponent },
+  { path: "upload", component: UploadComponent }
   // {path: '**', component: AppComponent
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {relativeLinkResolution: 'legacy'})],
-  exports: [RouterModule],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: "legacy" })],
+  exports: [RouterModule]
 })
 export class AppRoutingModule {
 }

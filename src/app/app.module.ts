@@ -1,28 +1,35 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { FooterComponent } from './components/footer/footer.component';
-import { AddShoppingCartComponent } from './components/add-shopping-cart/add-shopping-cart.component';
-import { UploadComponent } from './components/upload/upload.component';
-import { PageComponent } from './components/page/page.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { ReactiveFormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
+import { UploadComponent } from "./feature/upload/upload.component";
+import { HeaderComponent } from "./shared/components/header/header.component";
+import { SliderComponent } from "./shared/components/slider/slider.component";
+import { TagComponent } from "./shared/components/tag/tag.component";
+import { GoodComponent } from "./shared/components/good/good.component";
+import { FooterComponent } from "./shared/components/footer/footer.component";
+import { HomePageComponent } from "./feature/home-page/home-page.component";
+import { TagsComponent } from "./shared/components/tags/tags.component";
+import { GoodsComponent } from "./shared/components/goods/goods.component";
+import { AddShoppingCartComponent } from "@app/shared/components/add-shopping-cart/add-shopping-cart.component";
+import { DetailPageComponent } from "./feature/detail-page/detail-page.component";
+import { DescriptionComponent } from "./shared/components/description/description.component";
 
-// import { LottieAnimationViewModule } from 'ng-lottie';
 
 @NgModule({
-  declarations: [AppComponent, FooterComponent, AddShoppingCartComponent, UploadComponent, PageComponent],
+  declarations: [AppComponent, UploadComponent, HeaderComponent, SliderComponent, TagComponent, GoodComponent, FooterComponent, HomePageComponent, TagsComponent, GoodsComponent, AddShoppingCartComponent, DetailPageComponent, DescriptionComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule {
 }

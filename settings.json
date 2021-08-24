@@ -1,0 +1,59 @@
+{
+  "header": {
+    "phone": true,
+    "logo": true,
+    "email": true,
+    "social": {
+      "viber": true,
+      "telegram": true,
+      "skype": true,
+      "instagram": true
+    }
+  },
+  "slider": {
+    "mainImage": true,
+    "toggleButton": true,
+    "h1": true,
+    "description": true,
+    "productImages": true,
+    "orderForm": {
+      "fullPrice ": true,
+      "orderImages": true,
+      "nameField": {
+        "type": "text",
+        "placeholder": "Имя",
+        "icon": "icon icon_account-circle"
+      },
+      "phoneField": {
+        "type": "text",
+        "placeholder": "Номер",
+        "icon": "icon icon_account-circle"
+      },
+      "addressField": {
+        "type": "text",
+        "placeholder": "Адрес",
+        "icon": "icon icon_map-marker-alt"
+      }
+    },
+    "message": {
+      "photo": true,
+      "text": true
+    },
+    "addShoppingCartButton": true
+  },
+  "tag": {
+    "id": true,
+    "title": true,
+    "image": true
+  },
+  "good": {
+    "id": true,
+    "image": true,
+    "price": true,
+    "addShoppingCartButton": true
+  },
+  "footer": {
+    "block-1": true,
+    "block-2": true
+  }
+}

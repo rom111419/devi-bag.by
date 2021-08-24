@@ -1,0 +1,14 @@
+@import "vars";
+
+:host {
+  .description {
+    padding: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    float: left;
+    margin-bottom: 50px;
+    @include scroll();
+    border-radius: 3px;
+    text-align: justify;
+  }
+}

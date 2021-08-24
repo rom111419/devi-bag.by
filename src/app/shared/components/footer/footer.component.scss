@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  grid-row: 4/5;
+  grid-column: 1/9;
+  justify-content: space-between;
+  background: #9b9b9b;
+  padding: 40px 20px;
+  color: #fff;
+  box-shadow: 0 0 160px #d8d8d8, 0 0 20px #979797;
+  font-size: smaller;
+
+  a {
+    color: #fff;
+  }
+}

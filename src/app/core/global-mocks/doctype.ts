@@ -1,3 +1,3 @@
-Object.defineProperty(document, 'doctype', {
-	value: '<!DOCTYPE html>',
+Object.defineProperty(document, "doctype", {
+  value: "<!DOCTYPE html>"
 });
