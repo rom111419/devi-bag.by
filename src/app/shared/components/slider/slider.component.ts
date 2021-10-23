@@ -1,18 +1,18 @@
-import { Component, OnInit } from "@angular/core";
-import { CrudService } from "@app/core/services/crud.service";
-import { AppService } from "@app/core/services/app.service";
-import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { Component, OnInit } from '@angular/core';
+import { CrudService } from '@app/core/services/crud.service';
+import { AppService } from '@app/core/services/app.service';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: "pu-slider",
-  templateUrl: "./slider.component.html",
-  styleUrls: ["./slider.component.scss"]
+  selector: 'pu-slider',
+  templateUrl: './slider.component.html',
+  styleUrls: ['./slider.component.scss'],
 })
 export class SliderComponent implements OnInit {
   form: FormGroup = this.fb.group({
-    name: ["", [Validators.required]],
-    phone: ["", Validators.required],
-    address: ["", Validators.required]
+    name: [''],
+    phone: ['', Validators.required],
+    address: [''],
   });
 
   constructor(private fb: FormBuilder, private crud: CrudService, public appService: AppService) {

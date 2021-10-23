@@ -147,6 +147,11 @@
       width: 100%;
       margin: 10px 0;
     }
+
+    .icon_send {
+      display: flex;
+      align-items: center;
+    }
   }
 
   .orderImages {
@@ -160,6 +165,21 @@
       background-size: cover;
       background-position: center;
       cursor: pointer;
+      position: relative;
+
+      .trash {
+        background-image: url($assetsLink + '/imgs/delete_remove.svg');
+        position: absolute;
+        top: -30px;
+        right: 0px;
+        color: #76707e;
+        font-size: 37px;
+        width: 100%;
+        height: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
     }
   }
 

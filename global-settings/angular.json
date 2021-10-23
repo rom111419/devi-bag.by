@@ -1,0 +1,104 @@
+{
+  "$schema": "../../../node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "cli": {
+    "packageManager": "yarn",
+    "defaultCollection": "@angular-eslint/schematics"
+  },
+  "newProjectRoot": "projects",
+  "projects": {
+    "puffi": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/puffi",
+      "sourceRoot": "projects/puffi/src",
+      "prefix": "pu",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/puffi",
+            "index": "projects/puffi/src/index.html",
+            "main": "projects/puffi/src/main.ts",
+            "polyfills": "projects/puffi/src/polyfills.ts",
+            "tsConfig": "projects/puffi/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/puffi/src/favicon.ico",
+              "projects/puffi/src/assets"
+            ],
+            "styles": [
+              "projects/puffi/src/styles.scss"
+            ],
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "projects/puffi/src/environments/env.prod"
+              ]
+            }
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/puffi/src/environments/environment.ts",
+                  "with": "projects/puffi/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "20kb"
+                }
+              ]
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": true,
+              "sourceMap": true,
+              "namedChunks": true,
+              "stylePreprocessorOptions": {
+                "includePaths": [
+                  "projects/puffi/src/environments/env"
+                ]
+              }
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "puffi:build:development"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "puffi:build:production"
+            }
+          }
+        }
+      }
+    }
+  }
+}
