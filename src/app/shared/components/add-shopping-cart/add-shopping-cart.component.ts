@@ -24,7 +24,7 @@ export class AddShoppingCartComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
+    this.readAppServiceOrders();
   }
 
   addProduct() {

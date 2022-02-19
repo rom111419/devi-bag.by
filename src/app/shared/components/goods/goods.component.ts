@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from "@angular/core";
 import { CrudService } from "@app/core/services/crud.service";
-import { Observable } from "rxjs";
+import { Observable, tap } from "rxjs";
 import { IImage } from "@app/core/classes/image.interface";
 import { AppService } from "@app/core/services/app.service";
 import { ActivatedRoute, Params } from "@angular/router";
@@ -30,6 +30,10 @@ export class GoodsComponent implements OnInit, OnChanges {
   }
 
   getImages() {
-    this.deviBagImages$ = this.crud.get<IImage[]>(this.path);
+    this.deviBagImages$ = this.crud.get<IImage[]>(this.path).pipe(
+      tap(images => {
+        this.appService.images = images;
+      })
+    );
   }
 }
