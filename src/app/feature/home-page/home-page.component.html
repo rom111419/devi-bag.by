@@ -1,3 +1,6 @@
 <pu-slider></pu-slider>
-<pu-tags (onFilterDeviBugGoods)="tagId = $event"></pu-tags>
+<pu-tags (onFilterDeviBugGoods)="goToGoods($event, target)"></pu-tags>
+<pu-form class="mobileForm"></pu-form>
+<div id="target" #target></div>
 <pu-goods [path]="'/devi-bag-images/titleImages/' + tagId" [templ]="'homePage'"></pu-goods>
+<pu-form class="mobileForm"></pu-form>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
+import { AppService } from '@app/core/services/app.service';
+import { IImage } from '@app/core/classes/image.interface';
 
 @Component({
   selector: "pu-detail-page",
@@ -8,8 +10,8 @@ import { ActivatedRoute } from "@angular/router";
 })
 export class DetailPageComponent implements OnInit {
   productId: string = this.activatedRoute.snapshot.params["id"];
-
-  constructor(private activatedRoute: ActivatedRoute) {
+  product: IImage | undefined = this.appService.getImage(this.productId);
+  constructor(private activatedRoute: ActivatedRoute, public appService: AppService) {
   }
 
   ngOnInit(): void {

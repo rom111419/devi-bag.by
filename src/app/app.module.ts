@@ -17,6 +17,7 @@ import { GoodsComponent } from "./shared/components/goods/goods.component";
 import { AddShoppingCartComponent } from "@app/shared/components/add-shopping-cart/add-shopping-cart.component";
 import { DetailPageComponent } from "./feature/detail-page/detail-page.component";
 import { DescriptionComponent } from "./shared/components/description/description.component";
+import { FormModule } from '@app/shared/components/form/form.module';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { DescriptionComponent } from "./shared/components/description/descriptio
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

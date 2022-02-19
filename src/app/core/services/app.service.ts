@@ -14,6 +14,7 @@ export class AppService {
   thanks = false;
   addToBasket$: BehaviorSubject<IImage> = new BehaviorSubject<any>(null);
   removeFromOrders$: Subject<number> = new Subject<any>();
+  images: IImage[]= [];
 
   constructor() {
   }
@@ -38,5 +39,9 @@ export class AppService {
   clearOrders() {
     this.orders = [];
     this.summCalculation();
+  }
+
+  getImage(id: string): IImage | undefined {
+    return this.images.find(value => value.id === id);
   }
 }
