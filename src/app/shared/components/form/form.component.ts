@@ -2,6 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CrudService } from '@app/core/services/crud.service';
 import { AppService } from '@app/core/services/app.service';
+declare global {
+  interface Window {
+    ym?: any;
+  }
+}
 
 @Component({
   selector: 'pu-form',
@@ -14,11 +19,14 @@ export class FormComponent implements OnInit {
     phone: ['', Validators.required],
     address: [''],
   });
+  private ym: any;
   constructor(private fb: FormBuilder, private crud: CrudService, public appService: AppService) { }
 
   ngOnInit(): void {}
 
   onSubmit(condition: boolean) {
+    this.ym = window.ym;
+    this.ym(88003989,'reachGoal','send_form');
     this.appService.hideForm = true;
     if(condition) {
       this.crud
