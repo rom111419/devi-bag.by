@@ -7,7 +7,7 @@ import { Tag } from "@app/core/interfaces/tag";
   styleUrls: ["./tag.component.scss"]
 })
 export class TagComponent implements OnInit {
-  @Input() tag: Tag = { id: "", name: "", img: [] };
+  @Input() tag: Tag = { id: "", name: "", img: [], link: '' };
 
   constructor() {
   }

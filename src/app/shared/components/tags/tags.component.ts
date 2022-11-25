@@ -15,10 +15,11 @@ export class TagsComponent implements OnInit {
   @Output() onFilterDeviBugGoods: EventEmitter<Tag["id"]> = new EventEmitter<Tag["id"]>();
 
   constructor(private crud: CrudService, private appService: AppService) {
-    this.deviBagTags$ = this.crud.get<Tag[]>("/devi-bag-tags")
+    this.deviBagTags$ = this.crud.get<Tag[]>("/assets/goods.json")
       .pipe(
         map(value => {
-          return value;
+          console.log(value.filter(it => it.link.includes('_title.jpg')))
+          return value.filter(it => it.link.includes('_title.jpg'));
         })
       );
   }

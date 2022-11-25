@@ -5,7 +5,6 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
-import { UploadComponent } from "./feature/upload/upload.component";
 import { HeaderComponent } from "./shared/components/header/header.component";
 import { SliderComponent } from "./shared/components/slider/slider.component";
 import { TagComponent } from "./shared/components/tag/tag.component";
@@ -21,7 +20,7 @@ import { FormModule } from '@app/shared/components/form/form.module';
 
 
 @NgModule({
-  declarations: [AppComponent, UploadComponent, HeaderComponent, SliderComponent, TagComponent, GoodComponent, FooterComponent, HomePageComponent, TagsComponent, GoodsComponent, AddShoppingCartComponent, DetailPageComponent, DescriptionComponent],
+  declarations: [AppComponent, HeaderComponent, SliderComponent, TagComponent, GoodComponent, FooterComponent, HomePageComponent, TagsComponent, GoodsComponent, AddShoppingCartComponent, DetailPageComponent, DescriptionComponent],
   imports: [
     BrowserModule,
     HttpClientModule,

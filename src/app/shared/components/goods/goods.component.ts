@@ -12,7 +12,7 @@ import { ActivatedRoute, Params } from "@angular/router";
 })
 export class GoodsComponent implements OnInit, OnChanges {
   @Input() templ: "homePage" | "detailPage" | undefined;
-  @Input() path: string | undefined;
+  @Input() path = 'https://devi-bag.by/devi-bag-images';
   @Output() onGoToDetailProduct: EventEmitter<IImage["id"]> = new EventEmitter<IImage["id"]>();
   snapshotParams: Params = this.activatedRoute.snapshot.params;
   deviBagImages$: Observable<IImage[]> | undefined;
@@ -21,7 +21,6 @@ export class GoodsComponent implements OnInit, OnChanges {
   }
 
   ngOnInit(): void {
-    this.path = !this.path ? "/devi-bag-images" : this.path;
     this.getImages();
   }
 

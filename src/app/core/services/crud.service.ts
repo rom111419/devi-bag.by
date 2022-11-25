@@ -20,7 +20,7 @@ export type OptionsT = {
   providedIn: "root"
 })
 export class CrudService {
-  url: string = "https://api.rit-m.by";
+  url: string = "https://devi-bag.by";
   options = new HttpParams();
   body = {};
 
@@ -29,7 +29,7 @@ export class CrudService {
 
   get<T>(path?: any, options?: OptionsT, urlValue?: string): Observable<T> {
     const url = urlValue ? urlValue : this.url;
-    return this.http.get<T>(`${url}${path}`, options);
+    return this.http.get<T>(`${path}`, options);
   }
 
   create<T>(path: any, body?: any, urlValue?: string, options?: OptionsT): Observable<T> {
